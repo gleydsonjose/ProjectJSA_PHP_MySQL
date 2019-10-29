@@ -1,0 +1,35 @@
+create database jsaproject
+default character set utf8
+collate utf8_unicode_ci;
+
+use jsaproject;
+
+create table newsletter(
+	id int auto_increment not null,
+	email varchar(70) not null,
+	primary key(id)
+) CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+create table usuarios(
+	id int auto_increment not null,
+	login varchar(40) not null,
+	email varchar(70) not null,
+	nome varchar(40) not null,
+	sobrenome varchar(40) not null,
+	senha varchar(255) not null,
+	imagem_perfil varchar(255) not null,
+	cidade varchar(100) not null,
+	estado varchar(100) not null,
+	telefone int(30) not null,
+	dataderegistro datetime,
+	primary key(id)
+) CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+create table avaliacoes(
+	id int auto_increment not null,
+	avaliacao text not null,
+	data datetime,
+	primary key(id),
+	pk_id_usuario int not null,
+	foreign key(pk_id_usuario) references usuarios(id)
+) CHARACTER SET utf8 COLLATE utf8_general_ci;

@@ -1,0 +1,272 @@
+*{
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+/* COR PRETA */
+
+.bg-preto{
+    background-color: #292c2a !important;
+}
+
+/* COR VERDE */
+
+.text-success{
+    color: #52c675 !important;
+}
+
+.border-verde{
+    border: 1px solid #52c675;
+}
+
+.navbar-dark .navbar-toggler{
+    color: #52c675;
+    border-color: #52c675;
+    padding: .50rem .80rem !important;
+}
+
+.dropdown-item:active{
+    background-color: #30ad56 !important;
+}
+
+.btn-verde{
+    color: #fff;
+    background-color: #30ad56;
+    border-color: #30ad56;
+}
+
+.btn-verde:hover{
+    color: #fff;
+    background-color: #1e833c;
+    border-color: #1e833c;
+}
+
+.ativo{
+    color: #52c675 !important;
+}
+
+/* COR BRANCO */
+
+.btn-outline-light{
+    color: #d1dfd5 !important;
+    border-color: #d1dfd5 !important;
+}
+
+.btn-outline-light:hover{
+    color: #292c2a !important;
+    background-color: #d1dfd5 !important;
+    border-color: #d1dfd5 !important;
+}
+
+.btn-nav{
+    color: #d1dfd5 !important;
+}
+
+/* OUTROS */
+
+.border-secondary {
+    border-color: #6b6b6b85!important;
+}
+
+#excluir-avaliacao{
+    color: #bd2130;
+    cursor: pointer;
+}
+
+#excluir-avaliacao:hover{
+    color: #cf3141;
+    transition: .15s ease-in-out !important;
+}
+
+.body-avaliacoes{
+    width: 600px;
+}
+
+.card {
+    background-color: #f1f1f1;
+}
+
+.modal-head{
+    padding: 0.6rem 1rem 0.3rem 1rem;
+    border-bottom: none;
+}
+
+.custom-file-label::after {
+    content: "Escolher";
+}
+
+.form-control:focus{
+    border-color: #52c675;
+    box-shadow: 0 0 0 0.2rem #15d84f40;
+}
+
+.btn.focus, .btn:focus{
+    box-shadow: 0 0 0 0.2rem #15d84f40;
+}
+
+.dropdown-item-menu-principal:hover{
+    background-color: #30ad56 !important;
+    color: #fff !important;
+}
+
+.btn-nav li:hover{
+    opacity: 0.8;
+    transition: .15s ease-in-out !important;
+}
+
+.navbar-dark .navbar-toggler:hover{
+    opacity: 0.7;
+    transition: .15s ease-in-out !important;
+}
+
+button:focus{
+    outline: none;
+}
+
+.banner-principal-div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-informacoes{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 30px 20px 0 20px;
+}
+
+.titulo-banner h2{
+    font-size: 28pt !important;
+    cursor: default;
+}
+
+.titulo-banner h5{
+    font-size: 20pt !important;
+    cursor: default;
+}
+
+.atendimento{
+    margin-left: auto;
+}
+
+.atendimento p{
+    cursor: default;
+}
+
+@media (min-width: 992px){
+    .dropdown-menu{
+        margin-top: 30px !important;
+    }
+
+    .col-lg-4-servicos{
+        -ms-flex: 0 0 32%;
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
+
+    .col-lg-4-servicos img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .col-lg-4-instalacao{
+        margin-left: 1.5%;
+    }
+
+    .col-lg-4-limpeza{
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+
+    .col-lg-4-manutencao{
+        margin-right: 1.5%;
+    }
+}
+
+@media (min-width: 576px){
+    .modal-dialog-login {
+        max-width: 400px !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .col-12-servicos{
+        -ms-flex: 0 0 96%;
+        flex: 0 0 96%;
+        max-width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .col-12-servicos img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .titulo-banner h2{
+        font-size: 20pt !important;
+    }
+    
+    .titulo-banner h5{
+        font-size: 12pt !important;
+    }
+
+    .w-100-mobile{
+        width: 100%;
+    }
+
+    .menu-mobile{
+        text-align: center !important;
+    }
+    
+    .menu-mobile .ativo{
+        border: 1px solid #30ad56 !important;
+    }
+    
+    .menu-mobile .btn-nav:hover{
+        background-color: #30ad56 !important;
+        transition: .15s ease-in-out !important;
+    }
+
+    .menu-usuario{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .btn-dropdown{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .body-avaliacoes{
+        width: 500px;
+    }
+
+    .banner-informacoes{
+        padding: 0 20px;
+    }
+
+    .titulo-banner h2{
+        font-size: 16pt !important;
+    }
+    
+    .titulo-banner h5{
+        font-size: 8pt !important;
+    }
+
+    .atendimento p{
+        font-size: 10pt !important;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .body-avaliacoes{
+        width: 450px;
+    }
+}
